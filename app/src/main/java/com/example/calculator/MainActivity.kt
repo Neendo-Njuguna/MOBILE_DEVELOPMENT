@@ -20,36 +20,39 @@ import android.widget.EditText
 
 
          btnAdd.setOnClickListener {
-             if (etFirstDigit.text.toString().isEmpty() || etSecondDigit.text.toString()
-                     .isEmpty()
-             ) {
+             if (etFirstDigit.text.toString().isEmpty() ) {
                  etFirstDigit.setError("Input First Digit")
+             }
+             else if(etSecondDigit.text.toString().isEmpty()){
                  etSecondDigit.setError("Input Second Digit")
-             } else {
+             }
+             else {
                  var firstDigit = etFirstDigit.text.toString().toInt()
                  var secondDigit = etSecondDigit.text.toString().toInt()
                  var solution = firstDigit + secondDigit
                  btnSolution.text = "Solution: $solution"
              }
              btnLess.setOnClickListener {
-                 if (etFirstDigit.text.toString().isEmpty() || etSecondDigit.text.toString()
-                         .isEmpty()
-                 ) {
+                 if (etFirstDigit.text.toString().isEmpty() ) {
                      etFirstDigit.setError("Input First Digit")
+                 }
+                 else if(etSecondDigit.text.toString().isEmpty()){
                      etSecondDigit.setError("Input Second Digit")
-                 } else {
+                 }
+                  else {
                      var firstDigit = etFirstDigit.text.toString().toInt()
                      var secondDigit = etSecondDigit.text.toString().toInt()
                      var solution = firstDigit - secondDigit
                      btnSolution.text = "Solution: $solution"
                  }
                  btnProduct.setOnClickListener {
-                     if (etFirstDigit.text.toString().isEmpty() || etSecondDigit.text.toString()
-                             .isEmpty()
-                     ) {
+                     if (etFirstDigit.text.toString().isEmpty() ) {
                          etFirstDigit.setError("Input First Digit")
+                     }
+                     else if(etSecondDigit.text.toString().isEmpty()){
                          etSecondDigit.setError("Input Second Digit")
-                     } else {
+                     }
+                     else {
                      }
                      var firstDigit = etFirstDigit.text.toString().toInt()
                      var secondDigit = etSecondDigit.text.toString().toInt()
@@ -57,12 +60,13 @@ import android.widget.EditText
                      btnSolution.text = "Solution: $solution"
                  }
                  btnDivide.setOnClickListener {
-                     if (etFirstDigit.text.toString().isEmpty() || etSecondDigit.text.toString()
-                             .isEmpty()
-                     ) {
+                     if (etFirstDigit.text.toString().isEmpty() ) {
                          etFirstDigit.setError("Input First Digit")
+                     }
+                     else if(etSecondDigit.text.toString().isEmpty()){
                          etSecondDigit.setError("Input Second Digit")
-                     } else {
+                     }
+                     else {
                      }
                      var firstDigit = etFirstDigit.text.toString().toInt()
                      var secondDigit = etSecondDigit.text.toString().toInt()
