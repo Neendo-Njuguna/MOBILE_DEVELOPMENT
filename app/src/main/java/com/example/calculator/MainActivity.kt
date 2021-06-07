@@ -15,7 +15,7 @@ import android.widget.EditText
          val btnAdd = findViewById<Button>(R.id.btnAdd)
          val btnLess = findViewById<Button>(R.id.btnLess)
          val btnProduct = findViewById<Button>(R.id.btnProduct)
-         val btnDivide = findViewById<Button>(R.id.btnDivide)
+         val btnModulus = findViewById<Button>(R.id.btnModulus)
          val btnSolution = findViewById<Button>(R.id.btnSolution)
 
 
@@ -59,7 +59,7 @@ import android.widget.EditText
                      var solution = firstDigit * secondDigit
                      btnSolution.text = "Solution: $solution"
                  }
-                 btnDivide.setOnClickListener {
+                 btnModulus.setOnClickListener {
                      if (etFirstDigit.text.toString().isEmpty() ) {
                          etFirstDigit.setError("Input First Digit")
                      }
@@ -70,7 +70,7 @@ import android.widget.EditText
                      }
                      var firstDigit = etFirstDigit.text.toString().toInt()
                      var secondDigit = etSecondDigit.text.toString().toInt()
-                     var solution = firstDigit / secondDigit
+                     var solution = firstDigit % secondDigit
                      btnSolution.text = "Solution: $solution"
                  }
              }

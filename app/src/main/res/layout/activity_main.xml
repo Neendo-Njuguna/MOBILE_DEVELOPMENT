@@ -94,13 +94,13 @@
         app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
 
     <Button
-        android:id="@+id/btnDivide"
+        android:id="@+id/btnModulus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
-        android:text="DIVIDE"
+        android:text="MODULUS"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnProduct"
         app:layout_constraintTop_toBottomOf="@+id/btnLess" />
@@ -117,6 +117,6 @@
         android:text="Solution"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDivide" />
+        app:layout_constraintTop_toBottomOf="@+id/btnModulus" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
